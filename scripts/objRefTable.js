@@ -13,6 +13,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Touch,
 		C3.Plugins.Arr,
 		C3.Plugins.AJAX,
+		C3.Plugins.Particles,
 		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
@@ -31,10 +32,14 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.AJAX.Exps.LastData,
 		C3.Plugins.Text.Acts.SetText,
 		C3.Plugins.Arr.Exps.At,
+		C3.Plugins.Particles.Acts.Destroy,
+		C3.Plugins.Touch.Cnds.OnTouchObject,
+		C3.Plugins.Sprite.Acts.Spawn,
+		C3.Plugins.Particles.Acts.MoveToBottom,
+		C3.Plugins.Sprite.Acts.SetDefaultColor,
 		C3.Plugins.TextBox.Acts.SetCSSStyle,
 		C3.Plugins.TextBox.Cnds.CompareText,
 		C3.Plugins.System.Cnds.TriggerOnce,
-		C3.Plugins.Touch.Cnds.OnTouchObject,
 		C3.Plugins.TextBox.Cnds.OnTextChanged,
 		C3.Plugins.System.Cnds.Every,
 		C3.Plugins.System.Cnds.For,
@@ -67,6 +72,7 @@ self.C3_JsPropNameTable = [
 	{Touch: 0},
 	{Array: 0},
 	{AJAX: 0},
+	{Particles: 0},
 	{i: 0}
 ];
 
@@ -85,5 +91,6 @@ self.InstanceType = {
 	TiledBackground: class extends self.ITiledBackgroundInstance {},
 	Touch: class extends self.IInstance {},
 	Array: class extends self.IArrayInstance {},
-	AJAX: class extends self.IInstance {}
+	AJAX: class extends self.IInstance {},
+	Particles: class extends self.IParticlesInstance {}
 }
