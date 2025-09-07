@@ -1292,7 +1292,7 @@ self.C3_ExpressionFuncs = [
 			return () => n0.ExpObject();
 		},
 		() => "data",
-		() => 4,
+		() => 3,
 		() => 2,
 		() => 1.5,
 		() => -100,
