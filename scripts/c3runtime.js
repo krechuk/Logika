@@ -1317,17 +1317,30 @@ self.C3_ExpressionFuncs = [
 			const v1 = p._GetNode(1).GetVar();
 			return () => n0.ExpObject(3, v1.GetValue());
 		},
+		p => {
+			const n0 = p._GetNode(0);
+			const v1 = p._GetNode(1).GetVar();
+			return () => n0.ExpObject(4, v1.GetValue());
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			const v1 = p._GetNode(1).GetVar();
+			return () => and("За минулий урок +", n0.ExpObject(5, v1.GetValue()));
+		},
 		() => "",
 		() => 13158600,
 		() => 0.05,
 		() => 16777215,
+		() => "Геймдизайн",
+		() => "Python",
 		() => "font-size",
 		() => "100%",
 		() => "border-radius",
-		() => "10px",
+		() => "30px",
 		() => "border-color",
 		() => "#602B7A",
 		() => "padding",
+		() => "10px",
 		() => 50,
 		() => 100,
 		() => 0.1,

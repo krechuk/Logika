@@ -37,6 +37,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.Spawn,
 		C3.Plugins.Particles.Acts.MoveToBottom,
 		C3.Plugins.Sprite.Acts.SetDefaultColor,
+		C3.Plugins.Sprite.Acts.SetAnimFrame,
 		C3.Plugins.TextBox.Acts.SetCSSStyle,
 		C3.Plugins.TextBox.Cnds.CompareText,
 		C3.Plugins.System.Cnds.TriggerOnce,
@@ -73,6 +74,9 @@ self.C3_JsPropNameTable = [
 	{Array: 0},
 	{AJAX: 0},
 	{Particles: 0},
+	{course: 0},
+	{icon: 0},
+	{last: 0},
 	{i: 0}
 ];
 
@@ -92,5 +96,8 @@ self.InstanceType = {
 	Touch: class extends self.IInstance {},
 	Array: class extends self.IArrayInstance {},
 	AJAX: class extends self.IInstance {},
-	Particles: class extends self.IParticlesInstance {}
+	Particles: class extends self.IParticlesInstance {},
+	course: class extends self.ITextInstance {},
+	icon: class extends self.ISpriteInstance {},
+	last: class extends self.ITextInstance {}
 }
