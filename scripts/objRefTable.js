@@ -14,6 +14,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Arr,
 		C3.Plugins.AJAX,
 		C3.Plugins.Particles,
+		C3.Plugins.LocalStorage,
 		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
@@ -34,7 +35,14 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetDefaultColor,
 		C3.Plugins.System.Acts.Wait,
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
+		C3.Plugins.System.Acts.SetVar,
+		C3.Plugins.LocalStorage.Acts.ClearStorage,
 		C3.Plugins.TextBox.Acts.SetCSSStyle,
+		C3.Plugins.LocalStorage.Acts.CheckItemExists,
+		C3.Plugins.LocalStorage.Cnds.OnItemExists,
+		C3.Plugins.LocalStorage.Acts.GetItem,
+		C3.Plugins.LocalStorage.Cnds.OnItemGet,
+		C3.Plugins.LocalStorage.Exps.ItemValue,
 		C3.Plugins.TextBox.Cnds.CompareText,
 		C3.Plugins.Sprite.Acts.SetOpacity,
 		C3.Plugins.System.Cnds.TriggerOnce,
@@ -44,6 +52,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Arr.Exps.Height,
 		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.TextBox.Exps.Text,
+		C3.Plugins.LocalStorage.Acts.SetItem,
 		C3.Plugins.System.Acts.StopLoop,
 		C3.Plugins.System.Cnds.Else
 	];
@@ -74,6 +83,9 @@ self.C3_JsPropNameTable = [
 	{course: 0},
 	{icon: 0},
 	{last: 0},
+	{LocalStorage: 0},
+	{exit: 0},
+	{exit_text: 0},
 	{i: 0}
 ];
 
@@ -96,5 +108,8 @@ self.InstanceType = {
 	Particles: class extends self.IParticlesInstance {},
 	course: class extends self.ITextInstance {},
 	icon: class extends self.ISpriteInstance {},
-	last: class extends self.ITextInstance {}
+	last: class extends self.ITextInstance {},
+	LocalStorage: class extends self.IInstance {},
+	exit: class extends self.ISpriteInstance {},
+	exit_text: class extends self.ITextInstance {}
 }
