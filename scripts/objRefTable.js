@@ -86,6 +86,7 @@ self.C3_JsPropNameTable = [
 	{LocalStorage: 0},
 	{exit: 0},
 	{exit_text: 0},
+	{Sprite: 0},
 	{i: 0}
 ];
 
@@ -111,5 +112,6 @@ self.InstanceType = {
 	last: class extends self.ITextInstance {},
 	LocalStorage: class extends self.IInstance {},
 	exit: class extends self.ISpriteInstance {},
-	exit_text: class extends self.ITextInstance {}
+	exit_text: class extends self.ITextInstance {},
+	Sprite: class extends self.ISpriteInstance {}
 }
