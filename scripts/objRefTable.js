@@ -15,6 +15,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.AJAX,
 		C3.Plugins.Particles,
 		C3.Plugins.LocalStorage,
+		C3.Plugins.Keyboard,
 		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
@@ -49,7 +50,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.LocalStorage.Cnds.OnItemExists,
 		C3.Plugins.LocalStorage.Acts.GetItem,
 		C3.Plugins.LocalStorage.Cnds.OnItemGet,
-		C3.Plugins.LocalStorage.Exps.ItemValue,
 		C3.Plugins.TextBox.Cnds.CompareText,
 		C3.Plugins.System.Cnds.TriggerOnce,
 		C3.Plugins.TextBox.Cnds.OnTextChanged,
@@ -60,7 +60,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.TextBox.Exps.Text,
 		C3.Plugins.LocalStorage.Acts.SetItem,
 		C3.Plugins.System.Acts.StopLoop,
-		C3.Plugins.System.Cnds.Else
+		C3.Plugins.System.Cnds.Else,
+		C3.Plugins.LocalStorage.Exps.ItemValue
 	];
 };
 self.C3_JsPropNameTable = [
@@ -101,6 +102,7 @@ self.C3_JsPropNameTable = [
 	{ok: 0},
 	{logiks_plus: 0},
 	{question: 0},
+	{Keyboard: 0},
 	{i: 0}
 ];
 
@@ -134,5 +136,6 @@ self.InstanceType = {
 	box: class extends self.ISpriteInstance {},
 	ok: class extends self.ISpriteInstance {},
 	logiks_plus: class extends self.ITextInstance {},
-	question: class extends self.ITextInputInstance {}
+	question: class extends self.ITextInputInstance {},
+	Keyboard: class extends self.IInstance {}
 }
