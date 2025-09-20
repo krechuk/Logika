@@ -105,6 +105,7 @@ self.C3_JsPropNameTable = [
 	{question: 0},
 	{Keyboard: 0},
 	{info: 0},
+	{arrow2: 0},
 	{i: 0}
 ];
 
@@ -140,5 +141,6 @@ self.InstanceType = {
 	logiks_plus: class extends self.ITextInstance {},
 	question: class extends self.ITextInputInstance {},
 	Keyboard: class extends self.IInstance {},
-	info: class extends self.ISpriteInstance {}
+	info: class extends self.ISpriteInstance {},
+	arrow2: class extends self.ISpriteInstance {}
 }
