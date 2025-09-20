@@ -1326,16 +1326,6 @@ self.C3_ExpressionFuncs = [
 		() => "100%",
 		() => "border",
 		() => "0px",
-		p => {
-			const n0 = p._GetNode(0);
-			const v1 = p._GetNode(1).GetVar();
-			return () => n0.ExpObject(6, v1.GetValue());
-		},
-		p => {
-			const n0 = p._GetNode(0);
-			const v1 = p._GetNode(1).GetVar();
-			return () => (and("+", n0.ExpObject(7, v1.GetValue())) + " логік");
-		},
 		() => "Геймдизайн",
 		() => 1,
 		() => "Python",
@@ -1346,9 +1336,25 @@ self.C3_ExpressionFuncs = [
 		() => 13158600,
 		() => 0.05,
 		() => 16777215,
+		p => {
+			const n0 = p._GetNode(0);
+			const v1 = p._GetNode(1).GetVar();
+			return () => n0.ExpObject(6, v1.GetValue());
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			const v1 = p._GetNode(1).GetVar();
+			return () => (and("+", n0.ExpObject(7, v1.GetValue())) + " логік");
+		},
 		() => 70,
 		() => 0.1,
 		() => 100,
+		() => "Інформація",
+		p => {
+			const n0 = p._GetNode(0);
+			const v1 = p._GetNode(1).GetVar();
+			return () => n0.ExpObject(8, v1.GetValue());
+		},
 		() => -1,
 		() => "border-radius",
 		() => "30px",

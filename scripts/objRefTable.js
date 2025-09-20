@@ -31,7 +31,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Arr.Exps.At,
 		C3.Plugins.Particles.Acts.Destroy,
 		C3.Plugins.TextBox.Acts.SetCSSStyle,
-		C3.Plugins.TextBox.Acts.SetText,
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
 		C3.Plugins.TextBox.Acts.SetBlur,
 		C3.Plugins.System.Cnds.CompareBoolVar,
@@ -42,6 +41,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Particles.Acts.MoveToBottom,
 		C3.Plugins.Sprite.Acts.SetDefaultColor,
 		C3.Plugins.System.Acts.Wait,
+		C3.Plugins.TextBox.Acts.SetText,
 		C3.Plugins.Sprite.Acts.SetOpacity,
 		C3.Plugins.System.Acts.SetBoolVar,
 		C3.Plugins.System.Acts.SetVar,
@@ -103,6 +103,7 @@ self.C3_JsPropNameTable = [
 	{logiks_plus: 0},
 	{question: 0},
 	{Keyboard: 0},
+	{info: 0},
 	{i: 0}
 ];
 
@@ -137,5 +138,6 @@ self.InstanceType = {
 	ok: class extends self.ISpriteInstance {},
 	logiks_plus: class extends self.ITextInstance {},
 	question: class extends self.ITextInputInstance {},
-	Keyboard: class extends self.IInstance {}
+	Keyboard: class extends self.IInstance {},
+	info: class extends self.ISpriteInstance {}
 }
