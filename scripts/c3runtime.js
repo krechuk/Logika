@@ -1465,7 +1465,14 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() - 1);
 		},
-		() => "Богун Іван"
+		() => "Богун Іван",
+		p => {
+			const n0 = p._GetNode(0);
+			const v1 = p._GetNode(1).GetVar();
+			const n2 = p._GetNode(2);
+			const v3 = p._GetNode(3).GetVar();
+			return () => and(and(and(n0.ExpObject(6, v1.GetValue()), "\n"), "---------------------------------------------------"), n2.ExpObject(8, v3.GetValue()));
+		}
 ];
 
 
