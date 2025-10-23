@@ -1441,7 +1441,7 @@ self.C3_ExpressionFuncs = [
 			return () => (n0.ExpObject(0, v1.GetValue())).toString();
 		},
 		() => "#ff0000",
-		() => "2em",
+		() => "1.7em",
 		p => {
 			const n0 = p._GetNode(0);
 			const v1 = p._GetNode(1).GetVar();
