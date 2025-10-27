@@ -9,6 +9,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text,
 		C3.Behaviors.Anchor,
 		C3.Plugins.TextBox,
+		C3.Behaviors.solid,
 		C3.Plugins.TiledBg,
 		C3.Plugins.Touch,
 		C3.Plugins.Arr,
@@ -18,6 +19,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Keyboard,
 		C3.Plugins.List,
 		C3.Plugins.Browser,
+		C3.Behaviors.Platform,
 		C3.Plugins.System.Cnds.Compare,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
@@ -33,6 +35,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Arr.Exps.At,
 		C3.Plugins.Particles.Acts.Destroy,
 		C3.Plugins.TextBox.Acts.SetCSSStyle,
+		C3.Plugins.Sprite.Acts.SetAnim,
+		C3.Plugins.System.Exps.choose,
 		C3.Plugins.Sprite.Acts.SetAnimFrame,
 		C3.Plugins.TextBox.Acts.SetBlur,
 		C3.Plugins.System.Cnds.CompareBoolVar,
@@ -65,6 +69,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.StopLoop,
 		C3.Plugins.System.Cnds.Else,
 		C3.Plugins.LocalStorage.Exps.ItemValue,
+		C3.Behaviors.Platform.Acts.SimulateControl,
+		C3.Plugins.Sprite.Cnds.CompareY,
+		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Plugins.List.Acts.SetCSSStyle,
 		C3.Plugins.List.Acts.AddItem,
 		C3.Plugins.List.Acts.Remove,
@@ -87,6 +94,7 @@ self.C3_JsPropNameTable = [
 	{logo: 0},
 	{nameText: 0},
 	{Text: 0},
+	{Solid: 0},
 	{loginInput: 0},
 	{passwordInput: 0},
 	{loginButton: 0},
@@ -116,6 +124,11 @@ self.C3_JsPropNameTable = [
 	{arrow2: 0},
 	{List: 0},
 	{Browser: 0},
+	{VR: 0},
+	{Platform: 0},
+	{MfN: 0},
+	{zYj: 0},
+	{iFb: 0},
 	{i: 0}
 ];
 
@@ -154,5 +167,9 @@ self.InstanceType = {
 	info: class extends self.ISpriteInstance {},
 	arrow2: class extends self.ISpriteInstance {},
 	List: class extends self.IListInstance {},
-	Browser: class extends self.IInstance {}
+	Browser: class extends self.IInstance {},
+	VR: class extends self.ISpriteInstance {},
+	MfN: class extends self.ISpriteInstance {},
+	zYj: class extends self.ISpriteInstance {},
+	iFb: class extends self.ISpriteInstance {}
 }
