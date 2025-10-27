@@ -127,7 +127,6 @@ self.C3_JsPropNameTable = [
 	{VR: 0},
 	{Platform: 0},
 	{MfN: 0},
-	{zYj: 0},
 	{iFb: 0},
 	{i: 0}
 ];
@@ -170,6 +169,5 @@ self.InstanceType = {
 	Browser: class extends self.IInstance {},
 	VR: class extends self.ISpriteInstance {},
 	MfN: class extends self.ISpriteInstance {},
-	zYj: class extends self.ISpriteInstance {},
 	iFb: class extends self.ISpriteInstance {}
 }
