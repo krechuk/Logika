@@ -1395,7 +1395,7 @@ self.C3_ExpressionFuncs = [
 		() => "0px",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => f0("anim1", "anim2", "anim3");
+			return () => f0("anim1", "anim2", "anim3", "anim4");
 		},
 		() => "Геймдизайн",
 		() => 1,
@@ -1412,7 +1412,7 @@ self.C3_ExpressionFuncs = [
 		() => "",
 		() => 13158600,
 		() => 0.05,
-		() => 16777215,
+		() => 3063295,
 		p => {
 			const n0 = p._GetNode(0);
 			const v1 = p._GetNode(1).GetVar();
